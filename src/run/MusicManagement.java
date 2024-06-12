@@ -293,11 +293,11 @@ public class MusicManagement {
             if (MusicManagement.arrSong[i].getSinger().getSingerName().toLowerCase().contains(songNameOrGenre)
                     ||MusicManagement.arrSong[i].getSinger().getGenre().toLowerCase().contains(songNameOrGenre)) {
                 arrSong[i].displaySongData();
+                cntSong++;
             }
             if (cntSong == 0) {
             System.out.println("not fond : ");
             }
-            cntSong++;
         }
         System.out.println("Song number to find: " + cntSong);
     }
@@ -310,8 +310,8 @@ public static void searchSingerByNameOrGenre(Scanner scanner){
             if (MusicManagement.arrSinger[i].getSingerName().toLowerCase().contains(songNameOrGenre)||
             MusicManagement.arrSinger[i].getGenre().toLowerCase().contains(songNameOrGenre)) {
                 arrSinger[i].displaySingerData();
-            }
-            cntSinger++;
+                 cntSinger++;
+            }   
         }
         System.out.println("Singer number to find: " + cntSinger);
 
