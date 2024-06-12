@@ -78,8 +78,8 @@ public class MusicManagement {
         System.out.println("Enter the number of singer to enter information");
         int singerNumber = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < singerNumber; i++) {
-            arrSinger[i] = new Singer();
-            arrSinger[i].inputSingerData(scanner);
+            arrSinger[indexSinger] = new Singer();
+            arrSinger[indexSinger].inputSingerData(scanner);
             indexSinger++;
         }
     }
