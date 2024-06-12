@@ -91,7 +91,7 @@ public class MusicManagement {
     }
 
     public static void updateSinger(Scanner scanner){
-        System.out.println("Enter the Book Id to update");
+        System.out.println("Enter the Singer Id to update");
         int singerId = Integer.parseInt(scanner.nextLine());
         int indexUpdate = getIndexById(singerId);
         if (indexUpdate >=0 ) {
