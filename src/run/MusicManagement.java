@@ -294,6 +294,9 @@ public class MusicManagement {
                     ||MusicManagement.arrSong[i].getSinger().getGenre().toLowerCase().contains(songNameOrGenre)) {
                 arrSong[i].displaySongData();
             }
+            if (cntSong == 0) {
+            System.out.println("not fond : ");
+            }
             cntSong++;
         }
         System.out.println("Song number to find: " + cntSong);
